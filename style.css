@@ -1,0 +1,17 @@
+.jumbotron
+{
+    background-color: lightblue
+}
+.panel-body
+{
+    background-color: lightblue
+}
+th{
+    color: rgb(68, 128, 148)
+}
+body{
+    background-color: rgb(245, 236, 236);
+}
+tbody{
+    border: 1px solid silver;
+}
