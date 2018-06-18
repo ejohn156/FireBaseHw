@@ -18,7 +18,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="jumbotron">
-                    <h1 class="text-center">Employee Time Sheet</h1>
+                    <h1 class="text-center">Anytime is Train Time</h1>
+                    <h3 class="text-center">Choo Choo. Chee Chee.</h3>
                 </div>
             </div>
         </div>
@@ -27,16 +28,14 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th scope="col">Employee Name</th>
-                            <th scope="col">Role</th>
-                            <th scope="col">Start Date</th>
-                            <th scope="col">Months Worked</th>
-                            <th scope="col">Monthly Rate</th>
-                            <th scope="col">Total Billed</th>
-                            <th></th>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
                         </tr>
                     </thead>
-                    <tbody id="employeeRow">
+                    <tbody id="trainRow">
                         
                     </tbody>
                 </table>
@@ -45,32 +44,32 @@
 
         <div class="row">
             <!-- Sign-Up Panel-->
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Add Employee</h3>
+                        <h3 class="panel-title">Add Train</h3>
                     </div>
                     <div class="panel-body">
 
                         <!-- Sign-up Form (note the various input "types")-->
                         <form role="form">
                             <div class="form-group">
-                                <label for="name-input">Employee Name:</label>
+                                <label for="name-input">Train Name:</label>
                                 <input class="form-control" id="name-input" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="tole-input">Role:</label>
-                                <input class="form-control" id="role-input" type="email">
+                                <label for="dest-input">Destination:</label>
+                                <input class="form-control" id="dest-input" type="email">
                             </div>
                             <div class="form-group">
-                                <label for="sd-input">Start Date:</label>
-                                <input class="form-control" id="sd-input" type="date">
+                                <label for="first-input">First Train Time: (HH:MM - Military Time</label>
+                                <input class="form-control" id="first-input" type="time">
                             </div>
                             <div class="form-group">
-                                <label for="rate-input">Rate:</label>
-                                <input class="form-control" id="rate-input" type="number"></input>
+                                <label for="freq-input">Frequency: (min)</label>
+                                <input class="form-control" id="freq-input" type="number"></input>
                             </div>
-                            <button class="btn btn-default" id="add-emp" type="submit">Submit</button>
+                            <button class="btn btn-default" id="add-train" type="submit">Submit</button>
                         </form>
                     </div>
                 </div>
